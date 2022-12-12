@@ -1,0 +1,23 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+	<p:panel toggleable="true" styleClass="bottom-space">
+	<h:form>  
+    <p:growl id="messages"/>
+ 
+    <p:menubar>
+        <p:submenu label="Home" icon="pi pi-home"></p:submenu>
+        <p:submenu label="O nas" icon="pi pi-user"></p:submenu>
+        <p:submenu label="Nasze samochody" icon="pi pi-car"></p:submenu>
+ 		<p:submenu label="Kontakt" icon="pi pi-comments"></p:submenu>
+        <f:facet name="options">
+            <p:commandButton type="button" value="Logout" icon="pi pi-home" />
+        </f:facet>
+    </p:menubar>
+	</h:form>
+	</p:panel>
+
+</ui:composition>
